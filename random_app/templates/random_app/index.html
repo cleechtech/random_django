@@ -1,1 +1,24 @@
-hello django
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="Random Django">
+  <meta name="author" content="SitePoint">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  hello world
+	<form method="post" action="">
+		{% csrf_token %}
+		
+		{{ form.as_p }}
+		<input type='submit' value='Submit form'>
+	</form>
+</body>
+</html>

@@ -9,7 +9,7 @@ class UserProfile(models.Model):
     user = models.OneToOneField(User)
 
     # The additional attributes will include.
-    birthdate = models.DateField(blank=True)
+    birthdate = models.DateField(blank=True, null=True)
 
     HAIR_COLOR_CHOICES = (
         ('BLACK', 'Black'),
